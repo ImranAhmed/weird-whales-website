@@ -19,6 +19,7 @@ export const WhaleImage: React.FunctionComponent<{
         alt={`whale number ${whaleID}`}
         width={size}
         height={size}
+        style={{ width: size, height: size }}
       />
     </span>
   );

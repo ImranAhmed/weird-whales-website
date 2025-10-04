@@ -17,8 +17,10 @@ export const Container = styled.div`
   }
 `;
 
-export const RoundedImage = styled(Image)`
+// Use regular img tag for external images to avoid Netlify image optimization issues
+export const RoundedImage = styled.img`
   border-radius: 6px;
+  object-fit: cover;
 `;
 
 export const FlexRow = styled.div`
